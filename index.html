@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://kit.fontawesome.com/6d14dee71f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Coolers</title> 
+    <style type="text/css" media="all">
+     *{
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-wrap: balance;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+     }
+     
+     header{
+        display: flex;
+        justify-content: space-between;
+        background:transparent;
+        position:sticky;
+        backdrop-filter: blur(25px);
+        width: 100%;
+        box-shadow: 1px 1px 1px rgb(44, 86, 126);
+        }
+     ul li{
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(218, 48, 48);
+     }
+     header ul li:hover{
+        color: rgb(3, 3, 107);
+        text-decoration: underline 1px solid;
+        
+        
+     }
+     #logo{
+        color: rgb(246, 246, 248);
+        font-size: 1em;
+        font-weight: bolder;
+        padding: 5px;
+        margin-left: 50px;
+
+     }
+     .home{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        position: relative;
+        overflow: hidden;
+        z-index: -1;
+        background-image: url(vecteezy_ice-cubes-isolated-over-a-blue-background_1241322.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation-name: top;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: initial;
+        
+
+     }
+     #homeimage{
+        width: 600px;
+        height: 600px;
+        padding: 10px 10px;
+        transform: translateY(-30px);
+        
+     }
+     img{
+        width: 580px;
+        height: 580px;
+    
+    }
+     p{
+        font-size: 1.5em;
+        
+        line-height: 30px;
+        transform: translateY(140px);
+        margin-left: 50px;
+        color: white;
+        text-wrap: balance;
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        
+        
+
+    }
+    /*@keyframes slide{
+        0%{
+            transform: translateX(-10000px);
+        }
+        100%{
+            transform: translateX(100px);
+        }*/
+    
+    #reliable{
+        display: flex;
+        justify-content: center;
+        margin-right: 30px;
+        align-items: center;
+        border: 1px solid;
+        border-color: white;
+        width: 400px;
+        height: 200px;
+        transform: translateY(170px);
+        position: sticky;
+        z-index: 1;
+        backdrop-filter: blur(5px);
+        box-shadow: 2px 2px 5px rgb(58, 133, 177),-2px -2px 5px rgb(58, 133, 177);
+        border-radius: 5px;
+        }
+
+    
+      #reliable h3{
+        font-size: 1.5em;
+        
+        line-height: 30px;
+        margin-left: 0px;  
+        color: rgb(200, 200, 177);
+        
+    }
+     #reliable button{
+        position: absolute;
+        top: 120px;
+        
+        width: 100px;
+        height: 35px;
+        font-size: 1rem;
+        border-radius: 5px;
+        padding: 10px 10px;
+        transform: translateX(200px);
+    }
+    #rent{
+    transform: translateY(-100px);
+    margin-left: 155px;
+    font-size: 25px;
+    color: red;
+    text-shadow: 1px 1px 1px rgb(89, 89, 238);
+    line-height: 30px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    
+    
+    
+    }
+    .home button{
+    position: absolute;
+    left: 50px;
+    top:280px;
+    padding: 10px 10px;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(82, 102, 141);
+    border: 1px solid rgb(204, 206, 226);
+    color: white;
+    }
+    .home button:hover{
+        background-color:  rgb(66, 106, 249);
+    }
+    .container1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-left: 130px;
+    transform: translateY(-60px);
+    height: 340px;
+    width: 80%;
+    border-radius: 15px;
+    border: none;
+    }
+    #img1 ,#img2 ,#img3 , #img4{
+        flex: 1;
+        border: 0.5px solid white;
+        width: 50px;
+        height: 320px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        }
+        #img4:hover{
+            border: 1px solid blue;
+            
+        }
+        #img1:hover{
+            border: 1px solid blue;
+            }
+            #img3:hover{
+            border: 1px solid blue;
+            }
+            #img2:hover{
+            border: 1px solid blue;
+            }
+        #m{
+            width: 300px;
+            height: 180px;
+            
+            
+        }
+         #words{
+            font-size: 14px;
+            margin: 5px 5px;
+            padding: 5px 5px;
+            font-weight: lighter;
+            color:white;
+            font-family: verdana;
+
+            
+        }
+        
+        #room{
+            position: absolute;
+            left: 120px;
+            transform: translateY(-40px);
+            
+            
+        }
+        
+        span button{
+            position: absolute;
+            left: 40%;
+            width: 150px;
+            height: 35px;
+            font-size: 1em;
+            padding: 10px 10px;
+        }
+        #blursection{
+            transform: translateY(160px);
+            background-color: rgba(11, 47, 163, 0.8);           
+        }
+        #read{
+            width: 90px;
+            height: 34px;
+            padding:  10px 10px 10px 10px;
+            margin: 10px 10px;
+            transform: translateY(-10px);
+            border-radius: 5px;
+            
+            font-size: 12px;
+            text-align: center;
+            background-color: rgb(136, 18, 18);
+            color: white;
+            border:red 0.5px solid;
+
+        }
+        #read:hover{
+            border:white;
+        }
+        .message{
+            position: relative;
+            left: 100px;
+            
+            margin-top:200px;
+            width: 100%;
+            aspect-ratio: 16/9;
+            
+            }
+        .message input{
+    
+            margin-left: 20px;
+            display: block;
+            width: 550px;
+            height: 35px;
+            margin-top: 2px;
+            margin-bottom: 20px;
+            border: 1px solid;
+            border-radius: 3px;
+        }
+        .message label{
+            color: red;
+            margin-left: 20px;
+        }
+        .message textarea{
+            margin-left: 20px;
+            width: 550px;
+            transform: translateY(-10px);
+            
+
+            
+        }
+        .message h3{
+            margin-left: 80px;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            color: red;
+    text-shadow: 1px 1px 1px rgb(89, 89, 238);
+        }
+        .message button{
+            position: absolute;
+            top: 560px;
+            transform: translateX(-550px);
+            width: 100px;
+            height:30px;
+            z-index: 1;
+            border-radius: 5px;
+            color:white;
+            border: none;
+            background-color: rgb(160, 31, 31);
+            
+        }
+        #container2{
+            
+            padding: 10px 10px;
+            margin-left: 40px;
+            position: relative;
+            width: 100%;
+            height: 500px;
+
+        }
+        #container2::before{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -515px;
+            border: 1px solid;
+            width: 800px;
+            height: 800px;
+            z-index: -1;
+            border-radius: 100%;
+            margin-top: -50px;
+            background-color: rgba(55, 86, 151,0.8);
+            animation-duration: 10s;
+            animation-timing-function: ease;
+            animation-name: circle;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            transition: 0.55s all;
+
+            
+            
+            
+        }
+        @keyframes circle{
+            40%{
+                transform: translateX(-60px);
+
+            }
+            100%{
+
+                transform: translateX(30px);
+            }
+        }
+        footer{
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+
+
+
+        }
+        footer #wrapper{
+            display: flex;
+            justify-content: space-around;
+            margin-left: 0px;
+            padding: 10px 10px;
+            background-color: rgb(44, 74, 139);
+            border: 0.4px white;
+            backdrop-filter: blur(10px);
+            color: white;
+            box-shadow: 1px 1px 1px black, -1px -1px 1px black;
+            border-top-left-radius: 40px;
+            font-weight: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+        } 
+        footer #end{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 10px 10px;
+            background-color: rgb(160, 31, 31);
+            color: white;
+            font-weight: lighter;
+        }
+        #wrapper span a{
+            color: white;
+            border: 0.5px solid;
+            border-color: rgb(65, 112, 184);
+            border-radius: 50%;
+            padding: 6px;
+            font-size: 20px;
+            transition: all 0.25s;
+            font-weight: lighter;
+            
+        }
+        #wrapper span li:active{
+            scale: 1.1;
+        }
+        #wrapper span li a:hover{
+            font-size: 24px;
+        }
+        #wrapper span li{
+            padding: 5px;
+            transform: translateX(20px);
+            transform: translateY(20px);
+            
+        }
+        #wrapper h4{
+            transform: translateX(20px);
+        }
+    @media (max-width:500px){
+footer{
+    background-color: purple;
+}
+    }
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+    <div id="logo">
+    <h1>
+    <span style="color: rgb(14, 92, 236);">Airport</span> <span style="color: rgb(202, 77, 77);">Coolers </span>  
+     </h1>
+    </div>
+        
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contacts</li>
+                <li>Services</li>
+            </ul>
+            </header>
+    <main>
+        <section class="home">
+        <div>
+        <p>We have space and facilities for storing of all perishables such as pineapples, fresh beans, chilli, oranges,Mangoes, Fish,Berries e.t.c.Maximum protection ans storage is guaranted for your products
+
+        </p>
+        <button>Learn more</button>
+        
+        </div>
+            <div id="homeimage">
+                <div id="reliable">
+                    <h3>Looking for a reliable cold <br>storage unit?</h3>
+                    <button id="btn2">Discover</button>
+                </div>
+                </div>
+                
+            </section>
+            
+            <section id="blursection">
+                <h2 id="rent">We rent out Cold stores for fish, Meat,Fresh fruits, Vegetables
+                    at an affordable rate</h2>      
+        
+<div class="container1">
+
+            <div id="img1">
+                <img src="vegetables-752153_640.jpg" id="m">
+                <div id="words">We offer cold rooms to our customers for storing Vegetables and other perishable primary products</div>
+                <button id="read">Read more</button>
+            </div>
+            <div id="img2">
+                <img src="dock-441989_640.jpg" id="m">
+                <div id="words">World wide connections to enhance transportation of your products to different international locations</div>
+                <button id="read">Read more</button>
+            </div>
+            <div id="img3">
+                <img src="houses-1623320_640.jpg" id="m">
+                <div id="words">Our rentals are of modern Quality and to a standard for storage of your products in short and long periods</div>
+                <button id="read">Read more</button>
+            </div>
+            <div id="img4">
+                <img src="meeting-1702638_640.jpg" id="m">
+                <div id="words">We have a team of dedicated people  and enhanced technology to provide you with the services you need</div>
+                <button id="read">Read more</button>
+            </div>
+</div>
+
+        
+    <p id="room">Book Your cold room now, Lets make your products fresh and ready for the market</p>
+    
+        </section>
+        <section class="message">
+            <div id="container2">
+            <h3>Lets connect with you, Forward us a Message below</h3>
+            <label for="first">First Name</label>
+            <input type="text"id="First" required>
+            <label for="last">Last Name</label>
+            <input type="text"id="last" required>
+            <label for="email">Email Address</label>
+            <input type="email"id="email" required><br>
+            <textarea name="Your message" id="area" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <button>Send Message</button>
+        </div>
+        
+        </section>
+    </main>
+        <footer>
+            <div id="wrapper">
+            
+            <ol>
+                <li style="color: black; font-weight: bolder;">Contacts</li> 
+                <li><a>airportcoolers@gmail.com</a></li>
+                <li><a>Tel: +256 701 775 188 , +256 702 156 952 , +256 703 151 508</a></li>
+                <li><a>Address: p.o Box 10702 Kamapala Uganda </a></li>
+                <li><a>100m left turn off kampala - Entebbe Road at Kawuku Trading Center</a></li>
+                
+            </ol>
+            <ol>
+                <li style="color: black; font-weight: bolder;">Quick Links</li> 
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contacts</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ol>
+            
+            <span>
+                <h4 style="color: black; font-weight: bolder;">Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </span>
+            </div>
+            <div id="end">
+                © 2024 Airport Coolers All rights reserved
+            </div>
+
+        </footer>
+        
+       
+</body>
+</html>
